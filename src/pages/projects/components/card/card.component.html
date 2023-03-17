@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-content class="title">{{title}}</mat-card-content>
+  <span class="spacer"></span>
+  <mat-card-content class="project-toolbar">
+    <button mat-mini-fab>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <button mat-mini-fab (click)="delete(id)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card-content>
+</mat-card>

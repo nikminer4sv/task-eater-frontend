@@ -1,0 +1,33 @@
+mat-card {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  background-color: #c2185b;
+  height: 70px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+mat-card * {
+  display: flex;
+  vertical-align: middle;
+  margin: auto 0;
+  padding: 0;
+}
+
+.spacer {
+  flex: 1 1;
+}
+
+.project-toolbar button {
+  background-color: #030303;
+  color: white;
+  box-shadow: none;
+}
+
+.project-toolbar * {
+  margin: 0 5px;
+}
+
+.title {
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "taskeater-29846": {
+      "hosting": {
+        "TaskEater": [
+          "taskeater-29846"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "taskeater-29846"
+  }
+}
