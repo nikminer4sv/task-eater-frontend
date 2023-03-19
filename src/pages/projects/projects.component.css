@@ -1,4 +1,14 @@
+:host {
+  display: flex;
+  flex: 1 1;
+}
+
 .projects app-card {
-  display: block;
   margin-bottom: 10px;
+}
+
+.projects {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
 }

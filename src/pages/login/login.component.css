@@ -1,9 +1,13 @@
+:host {
+  overflow-y: hidden;
+}
+
 mat-card {
   height: 500px;
   max-width: 700px;
-  margin: 2em auto;
+  width: 700px;
   text-align: center;
-  line-height: calc(100vh - 60px);
+  line-height: calc(100vh - 65px);
 }
 
 form {
@@ -32,7 +36,29 @@ mat-card-title {
   font-size: 2em!important;
 }
 
+@media (max-width: 720px) {
+  mat-card {
+    width: 600px;
+  }
+}
+
+
+@media (max-width: 630px) {
+  mat-card {
+    width: 500px;
+  }
+}
+
+@media (max-width: 525px) {
+  mat-card {
+    width: 390px;
+  }
+}
+
 @media (max-width: 400px) {
+  mat-card {
+    width: 350px;
+  }
   mat-card-title {
     font-size: 1.3em!important;
   }

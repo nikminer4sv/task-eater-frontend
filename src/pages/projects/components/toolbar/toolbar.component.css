@@ -1,6 +1,7 @@
 .toolbar {
   width: 100%;
   display: flex;
+  flex-shrink: initial;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 20px;

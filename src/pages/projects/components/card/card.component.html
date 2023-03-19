@@ -3,7 +3,9 @@
   <span class="spacer"></span>
   <mat-card-content class="project-toolbar">
     <button mat-mini-fab>
-      <mat-icon>menu</mat-icon>
+      <a routerLink="{{id}}">
+        <mat-icon>menu</mat-icon>
+      </a>
     </button>
     <button mat-mini-fab (click)="delete(id)">
       <mat-icon>delete</mat-icon>
