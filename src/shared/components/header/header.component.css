@@ -3,10 +3,89 @@ a {
   font-weight: bold;
 }
 
+.home-button {
+  z-index: 1000;
+}
+
 mat-toolbar {
   height: 65px;
+  display: flex;
+  justify-content: center;
+  z-index: 1100;
+}
+
+.overflow {
+  position: relative;
+  z-index: 1099;
 }
 
 .spacer {
   flex: 1 1;
+}
+
+.main-menu {
+  display: flex;
+  flex: 1 1;
+}
+
+#sidebarMenu {
+  left: 0;
+  position: absolute;
+  overflow: unset;
+  width: 100%;
+  z-index: 1099;
+  top: 0;
+  transform: translateY(-200px);
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.menu-button {
+  display: none;
+  position: absolute;
+  z-index: 1100;
+  left: 10px;
+  top: 20px;
+}
+
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transition: 0.2s;
+  transform: translatey(0);
+  top: 65px;
+}
+
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.main-content-wrapper a{
+  display: flex;
+  background: #981346;
+  text-align: center;
+  height: 60px;
+  border-radius: 0;
+  border-bottom: 1px solid #700d32;
+  font-size: 18px;
+  color: whitesmoke;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.main-content-wrapper a:c {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .main-menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: initial;
+  }
 }

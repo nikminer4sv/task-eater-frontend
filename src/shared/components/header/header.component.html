@@ -1,7 +1,24 @@
-<mat-toolbar color="primary">
-  <a mat-flat-button routerLink="/" color="primary">TASK EATER</a>
-  <a mat-flat-button routerLink="/projects" color="primary">PROJECTS</a>
-  <span class="spacer"></span>
-  <a mat-flat-button routerLink="/login" color="primary">LOGIN</a>
-  <a mat-flat-button routerLink="/" color="primary">REGISTER</a>
-</mat-toolbar>
+<div>
+  <input #burgerMenuCheckbox type="checkbox" class="burger-menu-button" id="openSidebarMenu">
+  <label class="menu-button" for="openSidebarMenu">
+    <mat-icon>menu</mat-icon>
+  </label>
+  <div id="sidebarMenu">
+    <div class="main-content-wrapper" (click)="hideBurgerMenu()">
+      <a mat-flat-button routerLink="/projects" color="primary">PROJECTS</a>
+      <a mat-flat-button routerLink="/login" color="primary">LOGIN</a>
+      <a mat-flat-button routerLink="/" color="primary">REGISTER</a>
+    </div>
+  </div>
+</div>
+<div class="overflow">
+  <mat-toolbar color="primary">
+    <a mat-flat-button routerLink="/" color="primary" class="home-button">TASK EATER</a>
+    <div class="main-menu">
+      <a mat-flat-button routerLink="/projects" color="primary">PROJECTS</a>
+      <span class="spacer"></span>
+      <a mat-flat-button routerLink="/login" color="primary">LOGIN</a>
+      <a mat-flat-button routerLink="/" color="primary">REGISTER</a>
+    </div>
+  </mat-toolbar>
+</div>
