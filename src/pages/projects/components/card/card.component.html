@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card *ngIf="this.deleted != true">
   <mat-card-content class="title">{{title}}</mat-card-content>
   <span class="spacer"></span>
   <mat-card-content class="project-toolbar">
@@ -7,7 +7,7 @@
         <mat-icon>menu</mat-icon>
       </a>
     </button>
-    <button mat-mini-fab (click)="delete(id)">
+    <button mat-mini-fab (click)="delete()">
       <mat-icon>delete</mat-icon>
     </button>
   </mat-card-content>

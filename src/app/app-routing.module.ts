@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: "info", loadChildren: () => import("../pages/info/info.module").then(m => m.InfoModule) },
   { path: "login", loadChildren: () => import("../pages/login/login.module").then(m => m.LoginModule) },
   { path: "projects", loadChildren: () => import("../pages/projects/projects.module").then(m => m.ProjectsModule) },
+  { path: "**", pathMatch: 'full', loadChildren: () => import("../pages/not-found/not-found.module").then(m => m.NotFoundModule) },
 ];
 
 @NgModule({

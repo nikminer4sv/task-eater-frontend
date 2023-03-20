@@ -1,4 +1,14 @@
 <app-toolbar></app-toolbar>
 <div class="projects">
-  <app-card [title]="project.title" [id]="project.id" *ngFor="let project of this.projects"></app-card>
+  <app-card
+    [title]="project.title"
+    [id]="project.id"
+    *ngFor="let project of this.projects"
+    (removeEvent)="removeAction()"
+  ></app-card>
 </div>
+<mat-paginator
+  [length]="projectsAmount"
+  pageSize="10"
+  (page)="handlePage($event)">
+</mat-paginator>

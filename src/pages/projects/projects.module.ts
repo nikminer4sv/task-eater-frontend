@@ -6,6 +6,7 @@ import { CardComponent } from './components/card/card.component';
 import {SharedModule} from "../../shared/shared.module";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 
 
@@ -15,11 +16,12 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     CardComponent,
     ToolbarComponent
   ],
-  imports: [
-    CommonModule,
-    ProjectsRoutingModule,
-    SharedModule,
-    MatSnackBarModule,
-  ]
+    imports: [
+        CommonModule,
+        ProjectsRoutingModule,
+        SharedModule,
+        MatSnackBarModule,
+        MatPaginatorModule,
+    ]
 })
 export class ProjectsModule { }

@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 80px;
+  display: inline-block;
+  background-color: #c2185b;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 50px;
+    padding: 25px;
+    border-radius: 7px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
