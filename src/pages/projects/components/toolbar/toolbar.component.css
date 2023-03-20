@@ -1,14 +1,38 @@
 .toolbar {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  /*
+
   display: flex;
-  flex-shrink: initial;
+  flex: 1 1;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 20px;
+   */
 }
 
 button {
   font-size: 30px;
-  margin: 0 20px;
-  padding: 30px 30px!important;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 666px) {
+  .toolbar {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 341px) {
+
+  .toolbar {
+  }
+
+  button {
+    height: 45px;
+  }
 }
